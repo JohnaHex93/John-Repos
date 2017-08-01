@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Rekvava</title>
+            <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="js/jquery-1.11.0.min.js"></script>
+            <!-- Custom Theme files -->
+            <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+            <!-- Custom Theme files -->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <!-- start-smoth-scrolling -->
+            <script type="text/javascript" src="js/move-top.js"></script>
+            <script type="text/javascript" src="js/easing.js"></script>
+            <!----------------------------->
+            <script type="text/javascript">
+                $(document).ready(function($) {
+                    $(".scroll").click(function(event){		
+                        event.preventDefault();
+                        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                    });
+                });
+            </script>
+            <!----------------------------->
+        <!-- //end-smoth-scrolling -->
+            <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    </head>
+    <body>
+    <!--header start here-->
+        <div class="banner">
+            <div class="header">
+	            <div class="container">
+				    <div class="logo col-xs-8 col-sm-4 col-md-4 col-lg-4">
+					   <img src="images/logo.png" alt="#">
+				    </div>
+				    <div class="top-nav">
+                        <nav class="cl-effect-16">
+                            <ul class="res">
+                                <li><a href="index.html" class="active"  data-hover="Home">Home</a></li> 
+                                <li><a class="scroll" href="#leistungen"  data-hover="Leistungen">Leistungen</a></li> 
+                                <li><a class="scroll" href="#kontakt"  data-hover="Kontakt">Kontakt</a></li> 
+                                <li><a class="scroll" href="#footer"  data-hover="Impressum">Impressum</a></li> 
+				            </ul>
+				        </nav>
+					        <!-- script-for-menu -->
+				        <script>
+                            $( "span.menu" ).click(function() {
+                                $( "ul.res" ).slideToggle( 300, function() {
+							        // Animation complete.
+				                });
+				            });
+				        </script>
+		                    <!-- /script-for-menu -->
+				    </div>				
+                </div>
+            </div>
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="banner-bottom">
+                                <h3>Schmerzbehandlung</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner-bottom">
+                                <h3>Akupunktur</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner-bottom">
+                                <h3>Manuelle Therapie</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner-bottom">
+                                <h3>Traditionelle chinesische Medizin</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner-bottom">
+                                <h3>Abnehmen ohne Diät</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner-bottom">
+                                <h3>Orthomolekulare Medizin</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--<div class="clearfix"> </div>-->
+            </section>
+        </div>
+<!-- FlexSlider -->
+            <script defer src="js/jquery.flexslider.js"></script>
+				<script type="text/javascript">
+					$(function(){
+					 
+					});
+					$(window).load(function(){
+				        $('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						  $('body').removeClass('loading');
+						}
+				        });
+					});
+				</script>
+			<!-- FlexSlider -->
+<!--header end here-->
+<!--about start here-->
+        <div class="about" id="about">
+	        <div class="container">
+                <div class="col-xs-12 about-top">
+				    <h2>Home</h2>
+				    <h4>Rücken- und Gelenkschmerzen zählen zu den häufigsten Zivilisationskrankheiten.</h4>
+				    <p>Als Großstadtmenschen verbringen wir den größten Teil unsren Lebens im Sitzen, wir bewegen uns kaum. Wir ernähern uns zu üppig und meistens falsch. Stress, Verspannung, Schlafmangel sind unsere ständigen Begleiter. Übergewicht und Rückenbeschwerden sind die logischen Folgen, die unsere Lebensqualität erheblich senken.</p>
+                </div>
+                <div class="col-xs-12 home-info">
+				    <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 home-photo">
+				        <div class="home-photo__image">
+				            <img src="images/Olga.jpg" alt="">
+				        </div>
+                    </div>
+				    <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 home-photo-text">
+                        <h3>Ihre Olga Rekvava</h3>
+                        <p>In meiner Praxis erwarten Sie moderne Geräte und Technologien zur Behandlung von Rückenbeschwerden & Gelenkerkrankungen. Außerdem spezialisiere ich mich auf:
+                        <br>- Schmerzbehandlung
+                        <br>- manuelle Therapie
+                        <br>- traditionelle chinesische Medizin
+                        <br>- Akupunktur
+                        <br>- Abnehmen ohne Diät
+                        <br>- Orthomolekulare Medizin 
+                    </div>
+                </div>
+            </div>
+	    </div>
+<!--about end here-->
+<!--leistungen start here-->
+        <div class="leistungen" id="leistungen">
+                <div class="leistungen-top col-xs-12">
+                    <h3>Leistungen</h3>
+                    <p>Machen Sie den ersten Schritt! Vereinbaren Sie einen Beratungstermin und erfahren Sie, wie Sie in Ihrer Situation zur Verbesserung der Lebensqualität beitragen können!</p>
+                </div>
+			     <div class="container">
+			        <div class="leistungen-bottom col-xs-12 ">
+				        <div class="col-xs-12 col-md-4 ser-grid">
+					        <div class="image-back">
+				                <img src="images/bones.png" alt="">
+					        </div>
+                            <h4>Rückenbeschwerden</h4>
+                                <p><br>
+                                <br>• Остеопатия
+                                <br>• хиропрактика
+                                <br>• Физиотерапия
+                                <br>• нейронные
+                                <br>• иглоукалывание
+                                <br>• акупрессура
+                                <br>• Moxatherapy
+                                <br>• массаж Tuina
+                                <br>• Использование Anatomors с или без магнитного поля</p> 
+				        </div>
+				        <div class="col-xs-12 col-md-4 ser-grid">
+					        <div class="image-back">
+                                <img src="images/fat_1.png" alt="">    
+					        </div>
+                            <h4>Gewichtsregulierung
+                            Prävention von Stoffwechselerkrankungen</h4>
+                            <p>
+                            <br>• Как похудеть без диеты и добавки
+                            <br>• кишечная регулирование
+                            <br>• Hefepilztherapie
+                            <br>• крапивница терапия
+                            <br>• дренажная терапия
+                            <br>• детоксикация терапия
+                            <br>• Анализ волос
+                            <br>• Создание индивидуального плана питания
+                            <br>• постоянный контакт между пациентом и терапевтом.
+                            <br>• Тест на наличие в организме тяжелых металлов(ртуть, свинец, кадмий и т.д.) и дальнейшая консультация.</p>
+				        </div>
+				        <div class="col-xs-12 col-sm-6 col-md-4 ser-grid">
+					        <div class="image-back">
+				                <img src="images/happy_man.png" alt="">
+                            </div>
+                            <h4>Stressabbau und Entspannungstechniken</h4>
+                            <p>
+                            <br>• Использование устройств для рефлексотерапии, чтобы способствовать циркуляции крови и разрешение натяжения по правовращающегося вибрации
+                            <br>• массаж
+                            <br>• Психологическое консультирование</p>
+				        </div>
+			  <!--<div class="clearfix"> </div>-->
+                    </div>
+                </div>
+            
+            <div class="container">
+                <div class="leistungen-details-bottom col-xs-12">
+                    <div class="leistungen-details-info col-xs-12">
+                        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 leistungen-details-photo">
+                            <img src="images/bones.png" alt="">
+                        </div>
+                        <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 leistungen-details-text">
+                            <p>Jeder Mensch ist einzigartig und seine Gesundheitsprobleme müssen als Gesamtbild betrachtet werden. Mangel an Bewegung, sitzende Tätigkeit und Übergewicht verursachen viele von den so genannten Zivilisationskrankheiten. Dazu gehören auch die meisten Rückenprobleme. Diesen begegnen wir in unserer Praxis sowohl mit den modernen Technologien der manuellen Therapie und innovativen Geräten als auch mit den bewährten Methoden der chinesischen Medizin.</p>
+                        </div>
+                    </div>
+                    <div class="leistungen-details-info col-xs-12">
+                        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 leistungen-details-photo">
+                            <img src="images/fat_1.png" alt=""> 
+                        </div>
+                        <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 leistungen-details-text">
+                            <p>Übergewicht wird traditionell als Begleiterscheinung von Rücken- & Gelenkbeschwerden betrachtet. Gesunde Ernährungsumstellung hilft nicht nur der Gewichtsregulierung, sondern lindert viele Beschwerden und kann unter Umständen auch die Heilung von Krankheiten unterstützen. Wir bieten sanfte einfache Methode zur Gewichtsreduzierung an und können Sie auch mit Entgiftungstherapien beim Abnehmen unterstützen</p>
+                        </div>
+                    </div>
+                    <div class="leistungen-details-info col-xs-12">
+                        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 leistungen-details-photo">
+                            <img src="images/happy_man.png" alt="">
+                        </div>
+                        <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 leistungen-details-text">
+                            <p>Stress gilt nicht umsonst als Ursache von vielen psychischen aber auch physischen Beschwerden. Doch man kann lernen, mit Stress besser umzugehen. Zum unmittelbaren Stressabbau und Entspannung tragen einige Massagearten ganz besonders bei. Wir finden auch ein passendes Antistressprogramm auch für Sie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+<!--leistungen end here-->
+<!--contact-starts-->
+	    <div class="kontakt" id="kontakt">
+		    <div class="container">
+			    <div class="kontakt-head">
+                    <h3>Kontakt</h3>
+                    <h3>Heilpraxis Olga Rekvava</h3>
+			    </div>
+			    <div class="kontakt-top">
+				    <div class="col-md-4 kontakt-left">
+					    <div class="add1">
+                            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                            <p>Bataver Str.350679 Köln</p>
+					    </div>
+					    <div class="add1">
+                            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                            <p>0221975 53 73</p>
+					    </div>
+				    </div>	
+				    <div class="col-md-8 kontakt-right">
+				       <form>
+                            <input type="text" placeholder="Ihr Name">
+                            <input type="text" class="email" placeholder="Ihre E-Mail">
+                            <textarea placeholder="Ihre Frage" required=""></textarea>
+                            <div class="submit">
+                            <input type="submit" value="Senden">
+                            </div>    
+                        </form>
+				    </div>	
+				<!--<div class="clearfix"> </div>-->	
+			    </div>
+            </div>
+	</div>
+<!--contact-end-->
+<!--map start here-->
+        <div class="map">
+	        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9219.979593903487!2d20.5535958!3d54.7097129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf25cc5f96f3db%3A0x6695b6e76ed3886e!2zQmF0YXZlcnN0cmHDn2UsIDUwNjc5IEvDtmxuLCDQk9C10YDQvNCw0L3QuNGP!5e0!3m2!1sru!2sru!4v1496949863405" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+<!--map start here-->
+<!--footer start here-->
+        <div class="footer" id="footer">
+	        <div class="container">
+		        <div class="footer-impressum col-xs-12">
+                  <h3>Impressum</h3>
+                   <p>Hiermit distanziert sich der Betreiber dieser Webseite von sämtlichen Inhalten aller verlinkten/verknüpften Seiten. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde.</p>
+                   
+		        </div>
+		        <!--Скрипт для чоткой работы стрелки наверх-->
+		        <script type="text/javascript">
+				    $(document).ready(function() {
+				        /*
+				        var defaults = {
+				            containerID: 'toTop', // fading element id
+				            containerHoverID: 'toTopHover', // fading element hover id
+				            scrollSpeed: 1200,
+				            easingType: 'linear' 
+				        };
+				        */
+				            $().UItoTop({ easingType: 'easeOutQuart' });
+											
+				        });
+				</script>
+				<a href="#" id="toTop" style="display: block;"> 
+                   <span id="toTopHover" style="opacity: 1;"> 
+                   </span>
+                </a>
+            </div>
+        </div>
+<!--//footer--> 
+    </body>
+</html>
